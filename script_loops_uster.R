@@ -115,6 +115,6 @@ for(iiii in 1:dim(alle_seiten)[1]) {
   zusatz_liste <- c(zusatz_liste,zusatz)
 }
 
-datensatz <- data.frame(cbind(lix_liste,webseite_hash_liste,zusatz_liste))
+datensatz <- data.frame(cbind(alle_seiten[1:402,],lix_liste,webseite_hash_liste,zusatz_liste))
 write.csv(datensatz,file="datensatz.csv")
 
